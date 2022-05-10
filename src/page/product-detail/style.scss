@@ -1,0 +1,151 @@
+@import "../../variable";
+.product-detail {
+  .btn-cate {
+    color: $text-color;
+    background-color: #f1f1f1;
+    padding: 8px 14px;
+    border-radius: 4px;
+    &:hover {
+      transition: all 0.5s ease;
+      background-color: #e5e5e5;
+      color: $title-color-hover;
+    }
+  }
+  .content-product-page {
+    display: flex;
+    .sidebar {
+      width: 20%;
+      .sidebar-cate-box {
+        height: 300px;
+      }
+    }
+    .product-info-box {
+      width: 80%;
+      .box-product-info-top {
+        display: flex;
+        .box-img-info-product {
+          width: 40%;
+          .img-product-info {
+            width: 100%;
+          }
+        }
+        .box-product-content-right {
+          width: 60%;
+          padding-left: 40px;
+          .product-all-cate {
+            display: flex;
+            align-self: center;
+            a {
+              margin-right: 4px;
+              color: #768b9e;
+              &:hover {
+                transition: all 0.2s linear;
+                color: $title-color-hover;
+              }
+            }
+          }
+          .product-name {
+            font-size: 32px;
+            color: $text-color;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+          }
+          .box-product-wishlist-compare {
+            margin: 20px 0;
+            .btn-wishlish,
+            .btn-compare {
+              border: none;
+              color: #768b9e;
+              background-color: #fff;
+              padding: 10px;
+              cursor: pointer;
+              &:hover {
+                transition: all 0.2s linear;
+                color: $text-color;
+              }
+            }
+            .btn-wishlish {
+              margin-right: 10px;
+            }
+          }
+          .infomation-product-list {
+            list-style-type: circle;
+            margin-bottom: 30px;
+            .text-infomation-product {
+              color: #7d7d7d;
+              font-size: 16px;
+              margin-bottom: 4px;
+              margin-left: 20px;
+            }
+          }
+          .product-price-one {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: $text-color;
+          }
+          .product-price {
+            font-size: 22px;
+            color: #7d7d7d;
+            margin-bottom: 0px;
+            text-decoration: line-through;
+          }
+          .product-price-promotion {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: $red-color;
+          }
+          .box-quantity-add-cart {
+            input {
+              width: 100px;
+              padding: 10px 10px 10px 20px;
+              border: none;
+              outline: none;
+              border: 1px solid #ddd;
+              border-radius: 24px;
+              margin-right: 10px;
+              &:focus {
+                border-color: $yellow-main;
+              }
+            }
+            .btn-add-cart-big {
+              color: #fff;
+              width: 200px;
+              background-color: $yellow-main;
+              border-radius: 26px;
+              padding: 12px 20px;
+              font-size: 16px;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              font-weight: 500;
+              &:hover {
+                transition: all 0.2s ease;
+                color: #fff;
+                background-color: black;
+              }
+            }
+            .adding-to-cart {
+              color: #333;
+              width: 200px;
+              background-color: #00ffc6;
+              cursor: not-allowed;
+              border-radius: 26px;
+              padding: 12px 20px;
+              font-size: 16px;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              font-weight: 500;
+              &:hover {
+                transition: all 0.2s linear;
+                cursor: not-allowed;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

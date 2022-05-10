@@ -1,0 +1,24 @@
+.row {
+  display: flex;
+}
+.col-3 {
+  width: 30%;
+}
+.col-7 {
+  width: 70%;
+}
+.chill-banner-product-box {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+//responsive
+@media (max-width: 1023px) {
+}
+/* table */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+
+/* mobile */
+@media (max-width: 46.1875em) {
+}

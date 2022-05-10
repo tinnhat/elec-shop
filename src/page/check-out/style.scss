@@ -1,0 +1,199 @@
+@import "../../variable";
+.check-out {
+  .check-out-container {
+    .cart {
+      &-title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+      }
+      .cart-container {
+        width: 80%;
+        margin: 0 auto;
+        .box-cart-items {
+          padding-bottom: 10px;
+          border-bottom: 1px solid #ddd;
+          .title-table {
+            text-align: center;
+            margin-bottom: 0;
+          }
+        }
+        .scroll-cart {
+          max-height: 800px;
+          overflow: auto;
+          overflow-x: hidden;
+        }
+        .item-box {
+          margin-top: 16px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #ddd;
+
+          .item-child-box {
+            display: flex;
+            align-items: center;
+            .item-link {
+              display: flex;
+              align-items: center;
+              .item-child-img {
+                width: 100px;
+                height: 100px;
+                border: 1px solid #ddd;
+                margin: 0px 20px;
+              }
+              .item-child-name {
+                margin-bottom: 0;
+                color: $text-color;
+                font-size: 16px;
+              }
+            }
+            .remove-item {
+              border: none;
+              background-color: #fff;
+              font-size: 20px;
+              color: $red-color;
+              padding: 10px;
+              cursor: pointer;
+            }
+          }
+          .item-child-price {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 16px;
+          }
+          .item-child-total-price {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 16px;
+          }
+          .item-input-quantity {
+            padding: 8px 14px;
+            outline: none;
+            border: none;
+            width: 80px;
+            border: 1px solid #ddd;
+            border-radius: 26px;
+            font-size: 16px;
+          }
+        }
+        .box-update-checkout {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 40px;
+          .box-coupon {
+            position: relative;
+            .box-coupon-input {
+              width: 300px;
+              border: none;
+              outline: none;
+              padding: 10px 110px 10px 20px;
+              border: 1px solid #ddd;
+              border-radius: 24px;
+            }
+            .btn-apply-coupon {
+              border: none;
+              background-color: $title-color-hover;
+              color: #fff;
+              padding: 11px;
+              border-top-right-radius: 24px;
+              border-bottom-right-radius: 24px;
+              position: absolute;
+              right: 0;
+              cursor: pointer;
+            }
+          }
+          .box-update {
+            display: flex;
+            align-items: center;
+            .btn-check-out,
+            .btn-update-cart {
+              border: none;
+              padding: 10px 20px;
+              font-size: 16px;
+              background-color: #ddd;
+              color: $text-color;
+              border-radius: 24px;
+              margin-right: 20px;
+              cursor: pointer;
+            }
+            .btn-check-out {
+              font-weight: 500;
+              background-color: $yellow-main;
+            }
+          }
+        }
+        .cart-collaterals {
+          width: 400px;
+          margin-left: auto;
+          margin-top: 60px;
+
+          .cart-total {
+            font-size: 20px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            &::after {
+              content: "";
+              width: 120px;
+              height: 2px;
+              background-color: $yellow-main;
+              position: absolute;
+              bottom: -1px;
+              left: 0;
+            }
+          }
+          .cart-sub-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: 16px;
+            .text {
+              font-weight: 500;
+            }
+          }
+          .cart-title {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 500;
+            border-top: 1px solid #ddd;
+          }
+          .plat-rate {
+            display: flex;
+            justify-content: space-between;
+            .text {
+              font-weight: 500;
+            }
+          }
+          .cart-total-price {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            .text {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .no-product {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .col-6 {
+    width: 40%;
+  }
+  .col-2 {
+    width: 20%;
+  }
+}
+.box-flex {
+  display: flex;
+  justify-content: center;
+}

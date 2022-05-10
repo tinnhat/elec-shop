@@ -1,0 +1,58 @@
+@import "../../variable";
+
+.sub-header {
+  .menu-sub-items {
+    display: flex;
+    margin-bottom: 0;
+    .menu-sub-item {
+      padding: 10px;
+      margin-right: 40px;
+      font-weight: bold;
+      a {
+        color: $title-color;
+      }
+      &:first-child {
+        padding-right: calc(60px + #{$head-distance});
+        background-color: $yellow-main;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        margin-right: 70px;
+      }
+      &:last-child {
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: 0;
+      }
+      .all-dep {
+        &-title {
+          display: flex;
+          margin-bottom: 0;
+          align-items: center;
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      .all-pages {
+        &-link {
+          color: $red-color;
+          display: flex;
+          align-items: center;
+          span {
+            padding-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .sub-header {
+    .menu-sub-items {
+      .menu-sub-item {
+        margin-right: 10px;
+      }
+    }
+  }
+}

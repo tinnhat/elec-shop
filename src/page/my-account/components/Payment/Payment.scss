@@ -1,0 +1,19 @@
+.payments {
+  .group-text {
+    margin-bottom: 30px;
+  }
+  button {
+    background-color: #efecec !important;
+    border-color: #efecec;
+    color: #333e48;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #fff;
+      background: #000 !important;
+    }
+  }
+}

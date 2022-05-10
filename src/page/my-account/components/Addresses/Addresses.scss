@@ -1,0 +1,35 @@
+.addresses {
+  .group-add-address {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      width: 48%;
+
+      .group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: "";
+          width: 120px;
+          height: 2px;
+          left: 0;
+          bottom: -1px;
+          background: #fed700;
+        }
+      }
+
+      h3 {
+        font-size: 28px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

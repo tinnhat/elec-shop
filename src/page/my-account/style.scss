@@ -1,0 +1,84 @@
+@import "../../variable";
+.my-account {
+  .section-login-reg {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: #ddd;
+      position: absolute;
+      right: 50%;
+      transform: translateX(-50%);
+    }
+    &::before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      content: "or";
+      width: 50px;
+      height: 50px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      font-size: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      z-index: 1;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+  .center-light {
+    width: 10px;
+    height: 100%;
+    background-color: red;
+  }
+  .box-profile-user {
+    display: flex;
+    .menu-profile {
+      width: 10%;
+      border-right: 1px solid #ddd;
+      margin-right: 20px;
+      .menu-profile-item {
+        margin-bottom: 20px;
+        .menu-profile-item-link {
+          color: $text-color;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #ddd;
+          &:hover {
+            transition: all 0.2s ease;
+            color: $yellow-main;
+          }
+        }
+      }
+    }
+  }
+}
+.ant-modal-close-x {
+  display: none;
+}
+.ant-modal.modal-loading {
+  width: auto !important;
+}
+.url-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  .icon-right {
+    font-size: 10px;
+  }
+  .url-home {
+    margin-right: 6px;
+    color: $text-color;
+  }
+  .url-page-current {
+    margin-left: 6px;
+  }
+}

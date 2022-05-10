@@ -1,0 +1,16 @@
+.group-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fed700;
+  padding: 15px 20px;
+  border-left: 10px solid rgba(0, 0, 0, 0.15);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  button {
+    font-weight: 700;
+  }
+}

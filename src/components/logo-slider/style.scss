@@ -1,0 +1,13 @@
+.logo-slider {
+  width: 96%;
+  margin: 40px auto;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  .slick-next:before,
+  .slick-prev:before {
+    color: #ddd;
+  }
+}
+@media (max-width: 1023px) {
+}

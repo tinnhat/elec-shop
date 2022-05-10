@@ -1,0 +1,20 @@
+.account-detail {
+  .group-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      border-radius: 20px;
+    }
+  }
+}

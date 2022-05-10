@@ -1,0 +1,78 @@
+@import "../../../../variable";
+.login-section {
+  margin-top: 20px;
+
+  .login-title {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 2px;
+      background-color: $yellow-main;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+  .text-login {
+    margin: 40px 0;
+    font-weight: 400;
+    span {
+      display: block;
+    }
+  }
+  .labelLogin {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #333e48;
+    font-weight: bold;
+    display: block;
+  }
+  .rememberbox {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .labelRemember {
+    font-weight: bold;
+    padding-left: 6px;
+  }
+  .submit {
+    background-color: #efecec;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .login-box {
+    width: 600px;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+    &:focus {
+      border-color: $yellow-main;
+    }
+  }
+  .lost-pass {
+    color: #333e48;
+    opacity: 0.8;
+    margin-top: 20px;
+    display: block;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

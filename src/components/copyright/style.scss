@@ -1,0 +1,15 @@
+.copy-right {
+  padding: 4px 0;
+  background-color: #eaeaea;
+  .copy-right-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .copy-right-name {
+      margin: 0;
+    }
+    .copy-right-name {
+      font-size: 15px;
+    }
+  }
+}

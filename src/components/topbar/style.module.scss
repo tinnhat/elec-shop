@@ -1,0 +1,42 @@
+@import "../../variable";
+.title {
+  color: $text-color;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.text {
+  color: $text-color;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 10px 0;
+  &:hover {
+    transition: all 0.3s linear;
+    color: $yellow-main;
+  }
+  &::after {
+    content: "";
+    width: 1px;
+    background-color: $title-color;
+    height: 18px;
+    margin-left: 10px;
+    cursor: default;
+  }
+  &:last-child::after {
+    display: none;
+    margin-right: 0;
+  }
+}
+
+.icon {
+  margin-right: 6px;
+}
+.boxIcon {
+  display: flex;
+  margin-left: auto;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+}

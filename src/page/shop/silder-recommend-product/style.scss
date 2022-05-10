@@ -1,0 +1,98 @@
+@import "../../../variable";
+.box-slider-recommend-product {
+  button.slick-arrow.slick-prev,
+  button.slick-arrow.slick-next {
+    display: none !important;
+  }
+  .recommend-product-box {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 4px;
+    height: 350px;
+
+    &:hover {
+      transition: all 0.2s ease;
+      border: none;
+      box-shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    &:hover .box-wishlist-compare {
+      display: flex;
+    }
+    .recommend-product-link {
+      flex: 1;
+      color: $text-color;
+      padding: 10px;
+      display: block;
+    }
+    .categories-product-recommend {
+      display: block;
+      text-align: left;
+      font-size: 12px;
+      color: #768b9e;
+      font-weight: 500;
+      margin-bottom: 6px;
+      &:hover {
+        color: $text-color;
+        transition: all 0.2s ease;
+      }
+    }
+    .product-name-recommend {
+      color: #0062bd;
+      text-align: left;
+    }
+    .img-box-product-recommend {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-recommend-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+    }
+    .box-price-cart-product-recommend {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      .icon-add-to-cart {
+        font-size: 16px;
+        padding: 10px;
+        background-color: #ddd;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+          transition: all 0.3s ease;
+          background-color: $yellow-main;
+          color: #fff;
+        }
+      }
+      .price-recommend-product {
+        font-size: 17px;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+    .box-wishlist-compare {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 16px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+      .add-wishlist,
+      .add-compare {
+        display: flex;
+        align-items: center;
+      }
+      .icon-wishlist,
+      .icon-add-compare {
+        margin-right: 6px;
+      }
+    }
+  }
+}
